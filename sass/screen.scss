@@ -1,0 +1,656 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$primary-color: #34495e;
+$primary-textcolor: #2c3e50;
+$second-color: #ffffff;
+$primary-fontfamily: 'Droid Serif', serif;
+$header-fontfamily: 'Droid Sans', sans-serif;
+
+body {
+	color: $second-color;
+	font-size: 22px;	
+	font-family: $primary-fontfamily;
+	line-height: 33px;
+}
+
+a {
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	} 
+}
+
+.affix{
+	background: $primary-color !important;
+	width: 100%;
+	z-index: 1000;
+	top: 0;
+}
+	
+.section-title {
+	margin: 120px 0 60px 0;
+	font-size: 45px;	
+	font-family: $header-fontfamily;
+	font-weight: bold;
+	text-align: center;	
+}
+
+.logo {
+	display: block;
+	width: 140px;
+	height: 51px;
+	float: left;
+	overflow: hidden;
+	margin-top: 20px;
+	
+	.footer & {
+		margin: 70px 0 35px 0;
+		float: none;		
+	}
+}
+
+.twitter,
+.instagram,
+.facebook {
+	display: inline-block;
+	width: 59px;
+	height: 58px;
+}
+
+.twitter {
+	background: url(../img/twiter-icon.png) no-repeat;
+}
+
+.facebook {
+	background: url(../img/facebook-icon.png) no-repeat;
+}
+
+.instagram {
+	background: url(../img/instagram-icon.png) no-repeat;
+}
+
+
+//--------------WRAPPER-----------------
+.wrapper {
+	box-sizing: border-box;
+	width: 1170px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 70px;
+	
+	.section-porfolio & {
+		padding: 0;
+	}
+	
+	.section-contact & {
+		padding: 0 170px 0 300px;
+		box-sizing: border-box;
+		width: 1170px;
+		margin: 0 auto;
+		overflow: hidden;	
+	}
+}
+
+//----------------WELCOM-section-------------
+.welcom-section {
+	position: relative;
+	background: #282828 url(../img/bg-welcom_03.jpg) center top no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-height: 250px;
+	overflow: hidden;
+	
+	video {
+		display: none;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		background-size: cover;
+	}
+	.header { 
+		margin-top: 25px;
+		overflow: hidden;
+		font-family: $primary-fontfamily;
+	}	
+	
+	.bg-opacity {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;	
+		text-align: center;
+		background-color: rgba(52, 73, 94, 0.5);
+	}
+	
+	.group-position {
+		position: relative;
+		height: 100%;
+	}
+
+	h2 {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		right: 0;
+		font-size: 40px;	
+		font-family: $header-fontfamily;
+		line-height: 48px;	
+		text-align: center;
+		font-weight: bold;
+		
+		span{
+			display: block;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+    .welcom-section {
+		min-height: 400px;
+		
+		h2 {
+			font-size: 50px;
+			line-height: 62px;
+			top: 20%;
+		}
+	}
+}
+	
+@media screen and (min-width: 768px) {
+	.welcom-section {
+		min-height: 600px;
+				
+		video {
+			display: block;
+		}
+		
+		h2 {
+			font-size: 60px;
+			line-height: 72px;
+			top: 30%;
+		}
+	}
+}
+ 
+@media screen and (min-width: 992px) {
+    .welcom-section h2 {
+		font-size: 80px;
+		line-height: 92px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	
+	.nav-container {
+		padding:0 50px 0 100px;
+	}
+	
+	.footer	{
+		.logo {
+			margin-left: 100px;
+		}
+	}
+}	
+
+//-----------------------NAV----------------
+.nav-wrapper {
+	margin:0;
+	background: transparent;
+	border:none;
+	box-shadow:none;
+		
+	.mob-menu-button {
+		margin: 20px;
+		background: transparent;
+			.icon-bar {
+				color: $second-color;	
+			}
+		&:focus,
+		&:hover,
+		.active{
+			background: transparent;
+			box-shadow: 0 0 5px rgba(255,255,255,0.9);
+		}
+	}
+	
+	.main-nav {
+		overflow: hidden;
+		padding: 20px;
+		
+		>li {		
+			>a {
+				padding: 0 15px;
+				color: $second-color;
+				line-height: 52px;
+				border: 1px solid transparent;
+				font-family: $header-fontfamily;
+				
+				&:hover {
+					color:$second-color;
+					border: 1px solid $second-color;
+					box-shadow: 0 0 5px rgba(255,255,255,0.9);
+					background: transparent;
+					border-radius:20px;
+				}
+				&:focus {
+					color:$second-color;
+					border: 1px solid $second-color;
+					box-shadow: 0 0 5px rgba(255,255,255,0.9);
+					background: transparent;
+					border-radius:20px;
+				}
+			}
+		}
+	}
+}
+
+//----------------WELCOM-section-------------
+
+.icon-explore {
+	position: absolute;
+	bottom: 20%;
+	left:0;
+	right:0;
+	font-size: 22px;
+	color: $second-color;
+	display: block;
+	
+	span {
+		display: block;
+		
+		&:before {
+			content: "";
+			position: relative;
+			z-index: 1;
+			display: block;
+			width: 60px;
+			height: 60px;
+			margin: 0 auto 10px;
+			background: #2ecc71 url(../img/v.png) 19px 22px  no-repeat;
+			border-radius: 50%;
+		}
+	}
+	
+	&:before { 
+		content: "";
+		position: relative;
+		bottom: -30px;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: #555a62;
+	}
+	
+}
+
+//----------------------------section-ABOUT----------------------------
+.section-about {
+	overflow: hidden;
+	background: $primary-color;
+	
+	p {		
+		font-size: 24px;
+	}	
+}
+
+.structure {	
+	overflow: hidden;
+	margin-top: 135px;
+	margin-bottom: 110px;
+	text-align: center;
+	
+	
+	li {
+		display: inline-block;
+		margin-bottom: 20px;
+		padding: 0 80px;
+		vertical-align: top;
+		
+		.icon {
+			display: inline-block;
+			width: 153px;
+			height: 153px;
+		}
+		
+		.icon-services {
+			background: url(../img/bootstrap-icon.png) no-repeat;	
+		}
+		
+		.icon-retina {
+			background: url(../img/retina-icon.png) no-repeat;
+		}
+		
+		.icon-support {
+			background: url(../img/support-icon.png) no-repeat;
+		}
+		
+		h4 {
+			margin: 30px 0;
+			font-size: 26px;
+			font-weight: bold;
+			font-family: $header-fontfamily;	
+		}
+		
+		p {
+			padding: 0;
+			font-size: 22px;
+		}
+	
+	}
+	
+}
+
+//---------------------------section-PORTFOLIO--------------------------------
+.section-porfolio {
+	overflow: hidden;
+	color: $primary-textcolor;
+	background: $second-color;
+}
+
+.portfolio-menu {
+	overflow: hidden;
+	margin: 0 auto 100px;
+	text-align: center;
+	
+	li {
+		display: inline-block;
+		margin-left: 20px;
+			
+		&:first-child {
+			margin-left: 0;
+		}
+		
+		a {
+			display: inline-block;
+			padding: 0 20px;
+			line-height: 50px;
+			color: #2c3e50;
+			font-size: 30px;
+			font-family: $header-fontfamily;
+			border-radius: 20px;
+			
+			&:hover, 
+			.active {
+				text-decoration: none;
+				color: #ffffff;
+				background: #2ecc71;
+			}		
+			
+		}
+	}
+}
+
+.portfolio {
+	overflow: hidden;
+	margin-bottom: 80px;
+	text-align: center;
+	
+	li {		
+		margin-bottom: 30px;		
+	}
+	
+	.img-wrapper {
+		position: relative;
+		padding: 9px;
+		border: 1px solid #e9e9e9;
+	}
+}
+
+.hover-block {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: $second-color;	
+	text-align: center;
+	background-color: rgba(52, 73, 94, 0.9);
+	
+	.portfolio li:hover & {
+		display: block;
+	}
+	
+	h4 {
+		margin-top: 100px;
+		margin-bottom: 25px;
+		font-size: 35px;
+		font-family: $header-fontfamily;
+		font-weight: bold;	
+	}
+	
+	.view-project {
+		padding: 8px 15px;
+		font-size: 13px;
+		color: $second-color;
+		border: 1px solid $second-color;
+		border-radius: 20px;
+		background: none;	
+	}
+	
+}
+
+.project-modal {
+	text-align: left;
+	font-size: 20px;
+	background: $second-color;
+	
+	.close-icon {
+		width: 70px;
+		height: 68px;
+		margin: 70px 0 10px;
+		text-shadow:none;
+		opacity: 1;		
+		background: url(../img/close-icon.png) no-repeat;
+	}
+	
+	.section-title {
+		margin:20px 0 90px;
+	}
+	
+	img {
+		margin-bottom: 25px;		
+	}
+	
+	dt {
+		margin-bottom: 15px;
+		font-size: 26px;
+		font-weight: bold;
+	}
+	
+	dl{
+		margin-bottom: 50px;
+	}
+	
+	p{
+		margin-bottom: 40px;
+		padding-left:0;
+	}
+	
+	.site-project {
+		padding: 10px 18px;
+		font-size: 16px;
+		color: $second-color;
+		background: #2ecc71;
+		border-radius: 15px;
+		
+	}
+}
+
+//------------------------------section-TEAM----------------------
+
+.section-team {
+	background: #2980b9;
+	overflow: hidden;
+}
+
+.team {	
+	margin: 0 0 100px 0;
+	text-align: center;	
+	
+	li {
+		display: inline-block;
+		margin-bottom: 30px;
+		padding: 0 50px;
+		vertical-align: top;
+
+		h4 {
+			margin: 30px 0;
+			font-size: 26px;
+			font-weight: bold;
+			font-family: $header-fontfamily;	
+		}
+		
+		p {
+			margin-bottom: 50px;
+			font-size: 22px;
+		}
+		
+		.poto-wrapper {
+			overflow: hidden;
+			width: 218px;
+			height:218px;
+			margin: 0 auto;
+			border: 5px solid $second-color;
+			border-radius: 50%;	
+		}
+	}
+}
+
+//--------------------------section-CONTACT---------------------
+
+.section-contact {
+	overflow: hidden;
+	color: $primary-textcolor;
+	font-size: 26px;
+	background: $second-color;
+	
+	p {
+		margin-bottom: 90px;
+		padding-left: 10px;
+		font-family: $header-fontfamily;
+		font-weight: bold;
+		font-size: 26px;		
+	}
+	
+	dl {
+		overflow: hidden;
+		margin-bottom: 10%;
+		font-size: 20px;
+		font-family: $header-fontfamily;
+		
+			
+		dt {
+			margin-top: 40px;
+			font-weight: bold;
+			font-size: 16px;
+
+			&:first-child {
+				margin-top: 0;
+			}	
+		}
+		
+		a {
+			color: $primary-textcolor;
+		}		
+	}
+}
+
+.send-contact {
+	margin-bottom: 100px;
+	max-width: 370px;
+	
+	li {
+		margin-bottom: 50px;
+	}
+	
+	input,
+	textarea {
+		width: 100%;
+		padding: 10px 0;
+		color: $primary-textcolor;
+		font-size: 26px;
+		border: 0;
+		border-bottom: 3px solid #2ecc71;	
+	}	
+	
+	input[type="submit"] {
+		width: 130px;
+		margin-bottom: 10px;
+		padding: 15px 18px;
+		color: $second-color;
+		font-size: 26px;
+		background: #2ecc71;
+		border: 0;
+		border-radius: 20px;	
+	}
+	
+	*:focus {
+		outline: none;
+	}
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+   color: $primary-textcolor;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+   color: $primary-textcolor;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+   color: $primary-textcolor;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+   color: $primary-textcolor;
+}
+
+input[placeholder] {
+	color:  $primary-textcolor;
+}
+
+//------------------FOOTER----------------
+
+.footer {
+	overflow: hidden;
+	background: $primary-textcolor;	
+}
+
+.contacts {
+	margin: 0 0 50px 0;
+	
+	li {
+		max-width: 250px;
+		margin-bottom: 20px;
+		vertical-align: middle;
+		font-size: 16px;
+		font-family: $header-fontfamily;
+		line-height: 27px;
+		font-weight: bold;
+
+		a {
+			color: $second-color;	
+		}
+		
+		&:nth-child(3) {
+			a {
+				margin-right:10px;
+			}
+		}	
+	}
+}

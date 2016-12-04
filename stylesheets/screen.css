@@ -1,0 +1,717 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Droid Serif", serif;
+  line-height: 33px;
+}
+
+/* line 21, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+/* line 24, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 29, ../sass/screen.scss */
+.affix {
+  background: #34495e !important;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+/* line 36, ../sass/screen.scss */
+.section-title {
+  margin: 120px 0 60px 0;
+  font-size: 45px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 44, ../sass/screen.scss */
+.logo {
+  display: block;
+  width: 140px;
+  height: 51px;
+  float: left;
+  overflow: hidden;
+  margin-top: 20px;
+}
+/* line 52, ../sass/screen.scss */
+.footer .logo {
+  margin: 70px 0 35px 0;
+  float: none;
+}
+
+/* line 58, ../sass/screen.scss */
+.twitter,
+.instagram,
+.facebook {
+  display: inline-block;
+  width: 59px;
+  height: 58px;
+}
+
+/* line 66, ../sass/screen.scss */
+.twitter {
+  background: url(../img/twiter-icon.png) no-repeat;
+}
+
+/* line 70, ../sass/screen.scss */
+.facebook {
+  background: url(../img/facebook-icon.png) no-repeat;
+}
+
+/* line 74, ../sass/screen.scss */
+.instagram {
+  background: url(../img/instagram-icon.png) no-repeat;
+}
+
+/* line 80, ../sass/screen.scss */
+.wrapper {
+  box-sizing: border-box;
+  width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 70px;
+}
+/* line 87, ../sass/screen.scss */
+.section-porfolio .wrapper {
+  padding: 0;
+}
+/* line 91, ../sass/screen.scss */
+.section-contact .wrapper {
+  padding: 0 170px 0 300px;
+  box-sizing: border-box;
+  width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 101, ../sass/screen.scss */
+.welcom-section {
+  position: relative;
+  background: #282828 url(../img/bg-welcom_03.jpg) center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 250px;
+  overflow: hidden;
+}
+/* line 109, ../sass/screen.scss */
+.welcom-section video {
+  display: none;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+/* line 118, ../sass/screen.scss */
+.welcom-section .header {
+  margin-top: 25px;
+  overflow: hidden;
+  font-family: "Droid Serif", serif;
+}
+/* line 124, ../sass/screen.scss */
+.welcom-section .bg-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(52, 73, 94, 0.5);
+}
+/* line 134, ../sass/screen.scss */
+.welcom-section .group-position {
+  position: relative;
+  height: 100%;
+}
+/* line 139, ../sass/screen.scss */
+.welcom-section h2 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  font-size: 40px;
+  font-family: "Droid Sans", sans-serif;
+  line-height: 48px;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 150, ../sass/screen.scss */
+.welcom-section h2 span {
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, ../sass/screen.scss */
+  .welcom-section {
+    min-height: 400px;
+  }
+  /* line 160, ../sass/screen.scss */
+  .welcom-section h2 {
+    font-size: 50px;
+    line-height: 62px;
+    top: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 169, ../sass/screen.scss */
+  .welcom-section {
+    min-height: 600px;
+  }
+  /* line 172, ../sass/screen.scss */
+  .welcom-section video {
+    display: block;
+  }
+  /* line 176, ../sass/screen.scss */
+  .welcom-section h2 {
+    font-size: 60px;
+    line-height: 72px;
+    top: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 185, ../sass/screen.scss */
+  .welcom-section h2 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 193, ../sass/screen.scss */
+  .nav-container {
+    padding: 0 50px 0 100px;
+  }
+
+  /* line 198, ../sass/screen.scss */
+  .footer .logo {
+    margin-left: 100px;
+  }
+}
+/* line 205, ../sass/screen.scss */
+.nav-wrapper {
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+/* line 211, ../sass/screen.scss */
+.nav-wrapper .mob-menu-button {
+  margin: 20px;
+  background: transparent;
+}
+/* line 214, ../sass/screen.scss */
+.nav-wrapper .mob-menu-button .icon-bar {
+  color: #ffffff;
+}
+/* line 217, ../sass/screen.scss */
+.nav-wrapper .mob-menu-button:focus, .nav-wrapper .mob-menu-button:hover,
+.nav-wrapper .mob-menu-button .active {
+  background: transparent;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+}
+/* line 225, ../sass/screen.scss */
+.nav-wrapper .main-nav {
+  overflow: hidden;
+  padding: 20px;
+}
+/* line 230, ../sass/screen.scss */
+.nav-wrapper .main-nav > li > a {
+  padding: 0 15px;
+  color: #ffffff;
+  line-height: 52px;
+  border: 1px solid transparent;
+  font-family: "Droid Sans", sans-serif;
+}
+/* line 237, ../sass/screen.scss */
+.nav-wrapper .main-nav > li > a:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+  background: transparent;
+  border-radius: 20px;
+}
+/* line 244, ../sass/screen.scss */
+.nav-wrapper .main-nav > li > a:focus {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+  background: transparent;
+  border-radius: 20px;
+}
+
+/* line 258, ../sass/screen.scss */
+.icon-explore {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  color: #ffffff;
+  display: block;
+}
+/* line 267, ../sass/screen.scss */
+.icon-explore span {
+  display: block;
+}
+/* line 270, ../sass/screen.scss */
+.icon-explore span:before {
+  content: "";
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  background: #2ecc71 url(../img/v.png) 19px 22px no-repeat;
+  border-radius: 50%;
+}
+/* line 283, ../sass/screen.scss */
+.icon-explore:before {
+  content: "";
+  position: relative;
+  bottom: -30px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #555a62;
+}
+
+/* line 296, ../sass/screen.scss */
+.section-about {
+  overflow: hidden;
+  background: #34495e;
+}
+/* line 300, ../sass/screen.scss */
+.section-about p {
+  font-size: 24px;
+}
+
+/* line 305, ../sass/screen.scss */
+.structure {
+  overflow: hidden;
+  margin-top: 135px;
+  margin-bottom: 110px;
+  text-align: center;
+}
+/* line 312, ../sass/screen.scss */
+.structure li {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 80px;
+  vertical-align: top;
+}
+/* line 318, ../sass/screen.scss */
+.structure li .icon {
+  display: inline-block;
+  width: 153px;
+  height: 153px;
+}
+/* line 324, ../sass/screen.scss */
+.structure li .icon-services {
+  background: url(../img/bootstrap-icon.png) no-repeat;
+}
+/* line 328, ../sass/screen.scss */
+.structure li .icon-retina {
+  background: url(../img/retina-icon.png) no-repeat;
+}
+/* line 332, ../sass/screen.scss */
+.structure li .icon-support {
+  background: url(../img/support-icon.png) no-repeat;
+}
+/* line 336, ../sass/screen.scss */
+.structure li h4 {
+  margin: 30px 0;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+}
+/* line 343, ../sass/screen.scss */
+.structure li p {
+  padding: 0;
+  font-size: 22px;
+}
+
+/* line 353, ../sass/screen.scss */
+.section-porfolio {
+  overflow: hidden;
+  color: #2c3e50;
+  background: #ffffff;
+}
+
+/* line 359, ../sass/screen.scss */
+.portfolio-menu {
+  overflow: hidden;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+/* line 364, ../sass/screen.scss */
+.portfolio-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+/* line 368, ../sass/screen.scss */
+.portfolio-menu li:first-child {
+  margin-left: 0;
+}
+/* line 372, ../sass/screen.scss */
+.portfolio-menu li a {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 50px;
+  color: #2c3e50;
+  font-size: 30px;
+  font-family: "Droid Sans", sans-serif;
+  border-radius: 20px;
+}
+/* line 381, ../sass/screen.scss */
+.portfolio-menu li a:hover,
+.portfolio-menu li a .active {
+  text-decoration: none;
+  color: #ffffff;
+  background: #2ecc71;
+}
+
+/* line 392, ../sass/screen.scss */
+.portfolio {
+  overflow: hidden;
+  margin-bottom: 80px;
+  text-align: center;
+}
+/* line 397, ../sass/screen.scss */
+.portfolio li {
+  margin-bottom: 30px;
+}
+/* line 401, ../sass/screen.scss */
+.portfolio .img-wrapper {
+  position: relative;
+  padding: 9px;
+  border: 1px solid #e9e9e9;
+}
+
+/* line 408, ../sass/screen.scss */
+.hover-block {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(52, 73, 94, 0.9);
+}
+/* line 419, ../sass/screen.scss */
+.portfolio li:hover .hover-block {
+  display: block;
+}
+/* line 423, ../sass/screen.scss */
+.hover-block h4 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-size: 35px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+}
+/* line 431, ../sass/screen.scss */
+.hover-block .view-project {
+  padding: 8px 15px;
+  font-size: 13px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: none;
+}
+
+/* line 442, ../sass/screen.scss */
+.project-modal {
+  text-align: left;
+  font-size: 20px;
+  background: #ffffff;
+}
+/* line 447, ../sass/screen.scss */
+.project-modal .close-icon {
+  width: 70px;
+  height: 68px;
+  margin: 70px 0 10px;
+  text-shadow: none;
+  opacity: 1;
+  background: url(../img/close-icon.png) no-repeat;
+}
+/* line 456, ../sass/screen.scss */
+.project-modal .section-title {
+  margin: 20px 0 90px;
+}
+/* line 460, ../sass/screen.scss */
+.project-modal img {
+  margin-bottom: 25px;
+}
+/* line 464, ../sass/screen.scss */
+.project-modal dt {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+/* line 470, ../sass/screen.scss */
+.project-modal dl {
+  margin-bottom: 50px;
+}
+/* line 474, ../sass/screen.scss */
+.project-modal p {
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+/* line 479, ../sass/screen.scss */
+.project-modal .site-project {
+  padding: 10px 18px;
+  font-size: 16px;
+  color: #ffffff;
+  background: #2ecc71;
+  border-radius: 15px;
+}
+
+/* line 491, ../sass/screen.scss */
+.section-team {
+  background: #2980b9;
+  overflow: hidden;
+}
+
+/* line 496, ../sass/screen.scss */
+.team {
+  margin: 0 0 100px 0;
+  text-align: center;
+}
+/* line 500, ../sass/screen.scss */
+.team li {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 0 50px;
+  vertical-align: top;
+}
+/* line 506, ../sass/screen.scss */
+.team li h4 {
+  margin: 30px 0;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+}
+/* line 513, ../sass/screen.scss */
+.team li p {
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+/* line 518, ../sass/screen.scss */
+.team li .poto-wrapper {
+  overflow: hidden;
+  width: 218px;
+  height: 218px;
+  margin: 0 auto;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* line 531, ../sass/screen.scss */
+.section-contact {
+  overflow: hidden;
+  color: #2c3e50;
+  font-size: 26px;
+  background: #ffffff;
+}
+/* line 537, ../sass/screen.scss */
+.section-contact p {
+  margin-bottom: 90px;
+  padding-left: 10px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+/* line 545, ../sass/screen.scss */
+.section-contact dl {
+  overflow: hidden;
+  margin-bottom: 10%;
+  font-size: 20px;
+  font-family: "Droid Sans", sans-serif;
+}
+/* line 552, ../sass/screen.scss */
+.section-contact dl dt {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 557, ../sass/screen.scss */
+.section-contact dl dt:first-child {
+  margin-top: 0;
+}
+/* line 562, ../sass/screen.scss */
+.section-contact dl a {
+  color: #2c3e50;
+}
+
+/* line 568, ../sass/screen.scss */
+.send-contact {
+  margin-bottom: 100px;
+  max-width: 370px;
+}
+/* line 572, ../sass/screen.scss */
+.send-contact li {
+  margin-bottom: 50px;
+}
+/* line 576, ../sass/screen.scss */
+.send-contact input,
+.send-contact textarea {
+  width: 100%;
+  padding: 10px 0;
+  color: #2c3e50;
+  font-size: 26px;
+  border: 0;
+  border-bottom: 3px solid #2ecc71;
+}
+/* line 586, ../sass/screen.scss */
+.send-contact input[type="submit"] {
+  width: 130px;
+  margin-bottom: 10px;
+  padding: 15px 18px;
+  color: #ffffff;
+  font-size: 26px;
+  background: #2ecc71;
+  border: 0;
+  border-radius: 20px;
+}
+/* line 597, ../sass/screen.scss */
+.send-contact *:focus {
+  outline: none;
+}
+
+/* line 603, ../sass/screen.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #2c3e50;
+}
+
+/* line 608, ../sass/screen.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #2c3e50;
+}
+
+/* line 613, ../sass/screen.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #2c3e50;
+}
+
+/* line 618, ../sass/screen.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #2c3e50;
+}
+
+/* line 623, ../sass/screen.scss */
+input[placeholder] {
+  color: #2c3e50;
+}
+
+/* line 629, ../sass/screen.scss */
+.footer {
+  overflow: hidden;
+  background: #2c3e50;
+}
+
+/* line 634, ../sass/screen.scss */
+.contacts {
+  margin: 0 0 50px 0;
+}
+/* line 637, ../sass/screen.scss */
+.contacts li {
+  max-width: 250px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: "Droid Sans", sans-serif;
+  line-height: 27px;
+  font-weight: bold;
+}
+/* line 646, ../sass/screen.scss */
+.contacts li a {
+  color: #ffffff;
+}
+/* line 651, ../sass/screen.scss */
+.contacts li:nth-child(3) a {
+  margin-right: 10px;
+}
