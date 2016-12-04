@@ -377,18 +377,28 @@ a {
 			font-size: 30px;
 			font-family: $header-fontfamily;
 			border-radius: 20px;
-			
-			&:hover, 
-			.active {
+
+			&:hover,
+			&:focus {
 				text-decoration: none;
 				color: #ffffff;
-				background: #2ecc71;
-			}		
-			
-		}
+				background: #2ecc71;				
+			}			
+		}	
+				
 	}
+	
+	li.active a,
+	li.active a:hover,
+	li.active a:focus {
+			text-decoration: none;
+			color: #ffffff;
+			background: #2ecc71;
+		}
 }
 
+
+		
 .portfolio {
 	overflow: hidden;
 	margin-bottom: 80px;

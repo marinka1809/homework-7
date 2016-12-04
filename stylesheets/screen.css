@@ -441,31 +441,38 @@ a:hover {
   border-radius: 20px;
 }
 /* line 381, ../sass/screen.scss */
-.portfolio-menu li a:hover,
-.portfolio-menu li a .active {
+.portfolio-menu li a:hover, .portfolio-menu li a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background: #2ecc71;
+}
+/* line 391, ../sass/screen.scss */
+.portfolio-menu li.active a,
+.portfolio-menu li.active a:hover,
+.portfolio-menu li.active a:focus {
   text-decoration: none;
   color: #ffffff;
   background: #2ecc71;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 .portfolio {
   overflow: hidden;
   margin-bottom: 80px;
   text-align: center;
 }
-/* line 397, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .portfolio li {
   margin-bottom: 30px;
 }
-/* line 401, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 .portfolio .img-wrapper {
   position: relative;
   padding: 9px;
   border: 1px solid #e9e9e9;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .hover-block {
   display: none;
   position: absolute;
@@ -477,11 +484,11 @@ a:hover {
   text-align: center;
   background-color: rgba(52, 73, 94, 0.9);
 }
-/* line 419, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .portfolio li:hover .hover-block {
   display: block;
 }
-/* line 423, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .hover-block h4 {
   margin-top: 100px;
   margin-bottom: 25px;
@@ -489,7 +496,7 @@ a:hover {
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
 }
-/* line 431, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .hover-block .view-project {
   padding: 8px 15px;
   font-size: 13px;
@@ -499,13 +506,13 @@ a:hover {
   background: none;
 }
 
-/* line 442, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .project-modal {
   text-align: left;
   font-size: 20px;
   background: #ffffff;
 }
-/* line 447, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .project-modal .close-icon {
   width: 70px;
   height: 68px;
@@ -514,30 +521,30 @@ a:hover {
   opacity: 1;
   background: url(../img/close-icon.png) no-repeat;
 }
-/* line 456, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .project-modal .section-title {
   margin: 20px 0 90px;
 }
-/* line 460, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .project-modal img {
   margin-bottom: 25px;
 }
-/* line 464, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 .project-modal dt {
   margin-bottom: 15px;
   font-size: 26px;
   font-weight: bold;
 }
-/* line 470, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .project-modal dl {
   margin-bottom: 50px;
 }
-/* line 474, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .project-modal p {
   margin-bottom: 40px;
   padding-left: 0;
 }
-/* line 479, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .project-modal .site-project {
   padding: 10px 18px;
   font-size: 16px;
@@ -546,37 +553,37 @@ a:hover {
   border-radius: 15px;
 }
 
-/* line 491, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .section-team {
   background: #2980b9;
   overflow: hidden;
 }
 
-/* line 496, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .team {
   margin: 0 0 100px 0;
   text-align: center;
 }
-/* line 500, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .team li {
   display: inline-block;
   margin-bottom: 30px;
   padding: 0 50px;
   vertical-align: top;
 }
-/* line 506, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 .team li h4 {
   margin: 30px 0;
   font-size: 26px;
   font-weight: bold;
   font-family: "Droid Sans", sans-serif;
 }
-/* line 513, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 .team li p {
   margin-bottom: 50px;
   font-size: 22px;
 }
-/* line 518, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 .team li .poto-wrapper {
   overflow: hidden;
   width: 218px;
@@ -586,14 +593,14 @@ a:hover {
   border-radius: 50%;
 }
 
-/* line 531, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .section-contact {
   overflow: hidden;
   color: #2c3e50;
   font-size: 26px;
   background: #ffffff;
 }
-/* line 537, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .section-contact p {
   margin-bottom: 90px;
   padding-left: 10px;
@@ -601,38 +608,38 @@ a:hover {
   font-weight: bold;
   font-size: 26px;
 }
-/* line 545, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 .section-contact dl {
   overflow: hidden;
   margin-bottom: 10%;
   font-size: 20px;
   font-family: "Droid Sans", sans-serif;
 }
-/* line 552, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 .section-contact dl dt {
   margin-top: 40px;
   font-weight: bold;
   font-size: 16px;
 }
-/* line 557, ../sass/screen.scss */
+/* line 567, ../sass/screen.scss */
 .section-contact dl dt:first-child {
   margin-top: 0;
 }
-/* line 562, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 .section-contact dl a {
   color: #2c3e50;
 }
 
-/* line 568, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 .send-contact {
   margin-bottom: 100px;
   max-width: 370px;
 }
-/* line 572, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .send-contact li {
   margin-bottom: 50px;
 }
-/* line 576, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 .send-contact input,
 .send-contact textarea {
   width: 100%;
@@ -642,7 +649,7 @@ a:hover {
   border: 0;
   border-bottom: 3px solid #2ecc71;
 }
-/* line 586, ../sass/screen.scss */
+/* line 596, ../sass/screen.scss */
 .send-contact input[type="submit"] {
   width: 130px;
   margin-bottom: 10px;
@@ -653,51 +660,51 @@ a:hover {
   border: 0;
   border-radius: 20px;
 }
-/* line 597, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 .send-contact *:focus {
   outline: none;
 }
 
-/* line 603, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #2c3e50;
 }
 
-/* line 608, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   color: #2c3e50;
 }
 
-/* line 613, ../sass/screen.scss */
+/* line 623, ../sass/screen.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #2c3e50;
 }
 
-/* line 618, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #2c3e50;
 }
 
-/* line 623, ../sass/screen.scss */
+/* line 633, ../sass/screen.scss */
 input[placeholder] {
   color: #2c3e50;
 }
 
-/* line 629, ../sass/screen.scss */
+/* line 639, ../sass/screen.scss */
 .footer {
   overflow: hidden;
   background: #2c3e50;
 }
 
-/* line 634, ../sass/screen.scss */
+/* line 644, ../sass/screen.scss */
 .contacts {
   margin: 0 0 50px 0;
 }
-/* line 637, ../sass/screen.scss */
+/* line 647, ../sass/screen.scss */
 .contacts li {
   max-width: 250px;
   margin-bottom: 20px;
@@ -707,11 +714,11 @@ input[placeholder] {
   line-height: 27px;
   font-weight: bold;
 }
-/* line 646, ../sass/screen.scss */
+/* line 656, ../sass/screen.scss */
 .contacts li a {
   color: #ffffff;
 }
-/* line 651, ../sass/screen.scss */
+/* line 661, ../sass/screen.scss */
 .contacts li:nth-child(3) a {
   margin-right: 10px;
 }

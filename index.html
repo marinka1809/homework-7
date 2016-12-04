@@ -125,103 +125,105 @@
 				<h3 class="section-title">Porfolio</h3>
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2">
-						<ul class="portfolio-menu">
-							<li><a href="#">All</a></li>
-							<li><a class="active" href="#">Design</a></li>
-							<li><a href="#">Web</a></li>
-							<li><a href="#">Illustration</a></li>
-							<li><a href="#">Motion</a></li>
+						<ul class="nav nav-pills portfolio-menu" role="tablist">
+							<li role="presentation"><a href="#all-content" aria-controls="all-content" role="tab" data-toggle="tab">All</a></li>
+							<li role="presentation" class="active"> <a href="#design-content" aria-controls="design-content" role="tab" data-toggle="tab">Design</a></li>
+							<li role="presentation"><a href="#web-content" aria-controls="web-content" role="tab" data-toggle="tab">Web</a></li>
+							<li role="presentation"><a href="#illustration-content" aria-controls="illustration-content" role="tab" data-toggle="tab">Illustration</a></li>
+							<li role="presentation"><a href="#motion-content" aria-controls="motion-content" role="tab" data-toggle="tab">Motion</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="row">
-					<ul class="portfolio ">
-						<li class="col-sm-12 col-md-6 col-lg-4">
-							<div class="img-wrapper">
-								<img class="img-responsive" src="img/portfolio_01.jpg" alt="">
-							</div>
-							<div class="hover-block">
-								<h4>Project Title</h4>
-								<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
-							</div>
-							<div class="modal project-modal" id="modal-fossil" tabindex="1">													
-								<div class="container-fluid">
-									<div class="container">
-										<button type="button" class="close close-icon" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										<h3 class="section-title">Project title</h3>
-											<div class="row">
-												<ul>
-													<li class="col-lg-5 col-offset-1">
-														<img class="img-responsive" src="img/fossil.jpg" alt="">
-														<img class="img-responsive" src="img/go-fossil.jpg" alt="">
-													</li>
-													<li class="col-lg-5">
-														<dl>
-															<dt>Date</dt>
-															<dd>1st December 2014</dd>
-															<dt>Category</dt>
-															<dd>Web, UI4</dd>														
-														</dl>	
-														<p>
-															This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-															Aenean sollicitudin, lorem quis bibendum auctor. Aenean sollicitudin, lorem quis bibendum 
-															auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet 
-															nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum.
-														</p>
-														<a class="site-project" href="#">Visit site</a>
-													</li>												
-												</ul>
-											</div>										
-									</div>
+				<div class="tab-content">
+					<div class="row">
+						<ul role="tabpanel" class="tab-pane fade in active portfolio" id="design-content">
+							<li class="col-sm-12 col-md-6 col-lg-4">
+								<div class="img-wrapper">
+									<img class="img-responsive" src="img/portfolio_01.jpg" alt="">
 								</div>
-							</div>							
-						</li>
-						<li class="col-sm-12 col-md-6 col-lg-4">
-							<div class="img-wrapper">
-								<img class="img-responsive" src="img/portfolio_02.jpg" alt="">
-							</div>
-							<div class="hover-block">
-								<h4>Project Title</h4>
-								<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>							
-							</div>
-						</li>		
-						<li class="col-sm-12 col-md-6 col-lg-4">
-							<div class="img-wrapper">
-								<img class="img-responsive" src="img/portfolio_03.jpg" alt="">
-							</div>
-							<div class="hover-block">
-								<h4>Project Title</h4>
-								<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
-							</div>
-						</li>
-						<li class="col-sm-12 col-md-6 col-lg-4">
-							<div class="img-wrapper">
-								<img class="img-responsive" src="img/portfolio_04.jpg" alt="">
-							</div>
-							<div class="hover-block">
-								<h4>Project Title</h4>
-								<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
-							</div>
-						</li>
-						<li class="col-sm-12 col-md-6 col-lg-4">
-							<div class="img-wrapper">
-								<img class="img-responsive" src="img/portfolio_05.jpg" alt="">
-							</div>
-							<div class="hover-block">
-								<h4>Project Title</h4>
-								<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
-							</div>
-						</li>
-						<li class="col-sm-12 col-md-6 col-lg-4">
-							<div class="img-wrapper">
-								<img class="img-responsive" src="img/portfolio_06.jpg" alt="">
-							</div>
-							<div class="hover-block">
-								<h4>Project Title</h4>
-								<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
-							</div>
-						</li>
-					</ul>
+								<div class="hover-block">
+									<h4>Project Title</h4>
+									<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
+								</div>
+								<div class="modal project-modal" id="modal-fossil" tabindex="1">													
+									<div class="container-fluid">
+										<div class="container">
+											<button type="button" class="close close-icon" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h3 class="section-title">Project title</h3>
+												<div class="row">
+													<ul>
+														<li class="col-lg-5 col-offset-1">
+															<img class="img-responsive" src="img/fossil.jpg" alt="">
+															<img class="img-responsive" src="img/go-fossil.jpg" alt="">
+														</li>
+														<li class="col-lg-5">
+															<dl>
+																<dt>Date</dt>
+																<dd>1st December 2014</dd>
+																<dt>Category</dt>
+																<dd>Web, UI4</dd>														
+															</dl>	
+															<p>
+																This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+																Aenean sollicitudin, lorem quis bibendum auctor. Aenean sollicitudin, lorem quis bibendum 
+																auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet 
+																nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum.
+															</p>
+															<a class="site-project" href="#">Visit site</a>
+														</li>												
+													</ul>
+												</div>										
+										</div>
+									</div>
+								</div>							
+							</li>
+							<li class="col-sm-12 col-md-6 col-lg-4">
+								<div class="img-wrapper">
+									<img class="img-responsive" src="img/portfolio_02.jpg" alt="">
+								</div>
+								<div class="hover-block">
+									<h4>Project Title</h4>
+									<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>							
+								</div>
+							</li>		
+							<li class="col-sm-12 col-md-6 col-lg-4">
+								<div class="img-wrapper">
+									<img class="img-responsive" src="img/portfolio_03.jpg" alt="">
+								</div>
+								<div class="hover-block">
+									<h4>Project Title</h4>
+									<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
+								</div>
+							</li>
+							<li class="col-sm-12 col-md-6 col-lg-4">
+								<div class="img-wrapper">
+									<img class="img-responsive" src="img/portfolio_04.jpg" alt="">
+								</div>
+								<div class="hover-block">
+									<h4>Project Title</h4>
+									<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
+								</div>
+							</li>
+							<li class="col-sm-12 col-md-6 col-lg-4">
+								<div class="img-wrapper">
+									<img class="img-responsive" src="img/portfolio_05.jpg" alt="">
+								</div>
+								<div class="hover-block">
+									<h4>Project Title</h4>
+									<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
+								</div>
+							</li>
+							<li class="col-sm-12 col-md-6 col-lg-4">
+								<div class="img-wrapper">
+									<img class="img-responsive" src="img/portfolio_06.jpg" alt="">
+								</div>
+								<div class="hover-block">
+									<h4>Project Title</h4>
+									<button type="button" class="btn btn-primary btn-lg view-project" data-toggle="modal" data-target="#modal-fossil">View Project</button>						
+								</div>
+							</li>
+						</ul>					
+					</div>
 				</div>
 			</div>
 		</section>
